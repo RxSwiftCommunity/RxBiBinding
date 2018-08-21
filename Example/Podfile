@@ -1,0 +1,6 @@
+use_frameworks!
+target 'RxBiBinding_Tests' do
+  pod 'RxBiBinding', :path => '../'
+  
+  
+end
