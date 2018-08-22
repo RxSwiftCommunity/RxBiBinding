@@ -14,13 +14,13 @@
 /* Begin PBXFileReference section */
 		18BC36166AE1DEC419D7EA05 /* Pods_RxBiBinding_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxBiBinding_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		238661A92EC72DB93B5DD9CA /* Pods-RxBiBinding_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxBiBinding_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxBiBinding_Tests/Pods-RxBiBinding_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		3EB362F590028A13B5163EFB /* RxBiBinding.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = RxBiBinding.podspec; path = ../RxBiBinding.podspec; sourceTree = "<group>"; };
+		3EB362F590028A13B5163EFB /* RxBiBinding.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = RxBiBinding.podspec; path = ../RxBiBinding.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		440ED158A1DA83BCA3A425A3 /* Pods-RxBiBinding_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxBiBinding_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RxBiBinding_Tests/Pods-RxBiBinding_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		5CD68F8CFE067A3DECF6DE53 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		5CD68F8CFE067A3DECF6DE53 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		607FACE51AFB9204008FA782 /* RxBiBinding_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RxBiBinding_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		9E3FC47BAFA5E2BE5828377B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		9E3FC47BAFA5E2BE5828377B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,10 +131,6 @@
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = CocoaPods;
 				TargetAttributes = {
-					607FACCF1AFB9204008FA782 = {
-						CreatedOnToolsVersion = 6.3.1;
-						LastSwiftMigration = 0900;
-					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
 						LastSwiftMigration = 0900;
@@ -197,10 +193,14 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-RxBiBinding_Tests/Pods-RxBiBinding_Tests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/RxBiBinding/RxBiBinding.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxBiBinding.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

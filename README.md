@@ -1,15 +1,37 @@
 # RxBiBinding
 
-[![CI Status](https://img.shields.io/travis/Davarg/RxBiBinding.svg?style=flat)](https://travis-ci.org/Davarg/RxBiBinding)
 [![Version](https://img.shields.io/cocoapods/v/RxBiBinding.svg?style=flat)](https://cocoapods.org/pods/RxBiBinding)
 [![License](https://img.shields.io/cocoapods/l/RxBiBinding.svg?style=flat)](https://cocoapods.org/pods/RxBiBinding)
 [![Platform](https://img.shields.io/cocoapods/p/RxBiBinding.svg?style=flat)](https://cocoapods.org/pods/RxBiBinding)
 
 ## Example
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+Binding between ControlProperty and Variable
+```swift
+let disposeBag = DisposeBag()
+
+var text = Variable<String?>("")
+var textField: UITextField = UITextField()
+
+(textField.rx.text <-> text).disposed(by: disposeBag)
+```
+
+Binding between two NSObject
+```swift
+class TestClass: NSObject {
+    @objc dynamic var string = "TestString"
+}
+
+let disposeBag = DisposeBag()
+var test1 = TestClass()
+var test2 = TestClass()
+
+((test1, "string") <-> (test2, "string")).disposed(by: disposeBag)
+```
 
 ## Requirements
+
+iOS >= 10
 
 ## Installation
 

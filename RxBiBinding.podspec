@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'RxBiBinding'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of RxBiBinding.'
+  s.summary          = 'Bidirectional binding. Inspired by ReactiveCocoa'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+Reactive bidirectional (two-way) binding between RxControlProperties and RxVariables. Of course you can use this library and for NSObject
                        DESC
 
   s.homepage         = 'https://github.com/Davarg/RxBiBinding'
@@ -26,10 +26,10 @@ TODO: Add long description of the pod here.
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Davarg' => 'maka-dava@yandex.ru' }
   s.source           = { :git => 'https://github.com/Davarg/RxBiBinding.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.social_media_url = 'https://twitter.com/Underbridgins'
 
-  s.ios.deployment_target = '8.0'
-
+  s.ios.deployment_target = '10.0'
+  s.swift_version = '4.1'
   s.source_files = 'RxBiBinding/Classes/**/*'
   
   # s.resource_bundles = {
@@ -38,5 +38,6 @@ TODO: Add long description of the pod here.
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.dependency "RxSwift", "~> 4.2.0"
+  s.dependency "RxCocoa", "~> 4.2.0"
 end
