@@ -6,12 +6,32 @@
 
 ## Example
 
-Binding between ControlProperty and Variable
+Binding between two ControlProperty
 ```swift
 let disposeBag = DisposeBag()
 
-var text = Variable<String?>("")
-var textField: UITextField = UITextField()
+var textFieldFirst = UITextField()
+var textFieldSecond = UITextField()
+
+(textFieldFirst.rx.text <-> textFieldSecond.rx.text).disposed(by: disposeBag)
+```
+
+Binding between two BehaviorRelay
+```swift
+let disposeBag = DisposeBag()
+
+var textFirst = BehaviorRelay<String?>(value: "")
+var textSecond = BehaviorRelay<String?>(value: "")
+
+(textFirst <-> textSecond).disposed(by: disposeBag)
+```
+
+Binding between ControlProperty and BehaviorRelay
+```swift
+let disposeBag = DisposeBag()
+
+var text = BehaviorRelay<String?>(value: "")
+var textField = UITextField()
 
 (textField.rx.text <-> text).disposed(by: disposeBag)
 ```

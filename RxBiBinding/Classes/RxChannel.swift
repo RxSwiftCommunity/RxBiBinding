@@ -12,9 +12,23 @@ import RxCocoa
 
 infix operator <->
 
-public func <-><E>(left: ControlProperty<E>, right: Variable<E>) -> Disposable {
+public func <-><E>(left: ControlProperty<E>, right: ControlProperty<E>) -> Disposable {
     let leftChannel = RxChannel<E>(withProperty: left)
-    let rightChannel = RxChannel<E>.init(withVariable: right)
+    let rightChannel = RxChannel<E>.init(withProperty: right)
+    
+    return CompositeDisposable.init(leftChannel, rightChannel, leftChannel & rightChannel)
+}
+
+public func <-><E>(left: BehaviorRelay<E>, right: BehaviorRelay<E>) -> Disposable {
+    let leftChannel = RxChannel<E>(withBehaviorRelay: left)
+    let rightChannel = RxChannel<E>.init(withBehaviorRelay: right)
+    
+    return CompositeDisposable.init(leftChannel, rightChannel, leftChannel & rightChannel)
+}
+
+public func <-><E>(left: ControlProperty<E>, right: BehaviorRelay<E>) -> Disposable {
+    let leftChannel = RxChannel<E>(withProperty: left)
+    let rightChannel = RxChannel<E>.init(withBehaviorRelay: right)
     
     return CompositeDisposable.init(leftChannel, rightChannel, leftChannel & rightChannel)
 }
@@ -109,13 +123,13 @@ extension RxChannel {
     }
 }
 
-//MARK: - Init with Variable RxChannel
+//MARK: - Init with BehaviorRelay RxChannel
 
 extension RxChannel {
-    convenience init(withVariable variable: Variable<E>) {
+    convenience init(withBehaviorRelay relay: BehaviorRelay<E>) {
         self.init()
         
-        _ = variable
+        _ = relay
             .asObservable()
             .do { [weak self] in
                 self?.leadingTerminal?.onCompleted()
@@ -125,7 +139,7 @@ extension RxChannel {
             return
         }
         
-        variable
+        relay
             .asObservable()
             .subscribe(onNext: { [weak self] value in
                 guard let wSelf = self else {
@@ -148,7 +162,7 @@ extension RxChannel {
                 self?.createCurrentThreadData()
                 self?.currentThreadData()?.ignoreNextUpdate = true
                 
-                variable.value = value
+                relay.accept(value)
             })
             .disposed(by: self.disposeBag)
     }
