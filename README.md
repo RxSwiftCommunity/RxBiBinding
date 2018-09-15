@@ -1,5 +1,6 @@
 # RxBiBinding
 
+[![Build Status](https://travis-ci.org/Davarg/RxBiBinding.svg?branch=master)](https://travis-ci.org/Davarg/RxBiBinding)
 [![Version](https://img.shields.io/cocoapods/v/RxBiBinding.svg?style=flat)](https://cocoapods.org/pods/RxBiBinding)
 [![License](https://img.shields.io/cocoapods/l/RxBiBinding.svg?style=flat)](https://cocoapods.org/pods/RxBiBinding)
 [![Platform](https://img.shields.io/cocoapods/p/RxBiBinding.svg?style=flat)](https://cocoapods.org/pods/RxBiBinding)
