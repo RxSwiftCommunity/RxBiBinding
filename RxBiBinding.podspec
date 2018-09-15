@@ -21,12 +21,11 @@ Pod::Spec.new do |s|
 Reactive bidirectional (two-way) binding between RxControlProperties and RxVariables. Of course you can use this library and for NSObject
                        DESC
 
-  s.homepage         = 'https://github.com/Davarg/RxBiBinding'
+  s.homepage         = 'https://github.com/RxSwiftCommunity/RxBiBinding'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'Davarg' => 'maka-dava@yandex.ru' }
-  s.source           = { :git => 'https://github.com/Davarg/RxBiBinding.git', :tag => s.version.to_s }
-  s.social_media_url = 'https://twitter.com/Underbridgins'
+  s.author           = { 'RxSwiftCommunity' => 'community@rxswift.org' }
+  s.source           = { :git => 'https://github.com/RxSwiftCommunity/RxBiBinding', :tag => s.version.to_s }
 
   s.ios.deployment_target = '10.0'
   s.swift_version = '4.1'
