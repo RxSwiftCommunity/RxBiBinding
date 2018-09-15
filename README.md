@@ -62,10 +62,11 @@ it, simply add the following line to your Podfile:
 pod 'RxBiBinding'
 ```
 
-## Author
+## Thanks
 
-Davarg, maka-dava@yandex.ru
+This solution is based on [ReactiveCocoa](https://github.com/ReactiveCocoa/ReactiveCocoa) (Obj-C version)
 
 ## License
 
 RxBiBinding is available under the MIT license. See the LICENSE file for more info.
+Copyright (c) RxSwiftCommunity
