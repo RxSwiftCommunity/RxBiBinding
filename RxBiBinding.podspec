@@ -25,7 +25,8 @@ Reactive bidirectional (two-way) binding between RxControlProperties and RxVaria
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Davarg' => 'maka-dava@yandex.ru' }
-  s.source           = { :git => 'https://github.com/RxSwiftCommunity/RxBiBinding', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/RxSwiftCommunity/RxBiBinding.git', :tag => s.version.to_s }
+  s.social_media_url = 'https://twitter.com/Underbridgins'
 
   s.ios.deployment_target = '10.0'
   s.swift_version = '4.1'
