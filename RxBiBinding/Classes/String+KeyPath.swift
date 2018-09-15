@@ -3,7 +3,7 @@
 //  RxBiBinding
 //
 //  Created by Александр Макушкин on 22.08.2018.
-//
+//  Copyright (c) RxSwiftCommunity
 
 import Foundation
 
