@@ -250,7 +250,7 @@ extension RxChannel {
         }
         
         let r = rightFolTer.bind(to: leftFolTer)
-        let l = leftFolTer.bind(to: rightFolTer)
+        let l = leftFolTer.skip(1).bind(to: rightFolTer)
         
         return CompositeDisposable.init(r, l)
     }
