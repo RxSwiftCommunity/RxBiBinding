@@ -1,6 +1,7 @@
 # RxBiBinding
 
 [![Build Status](https://travis-ci.org/RxSwiftCommunity/RxBiBinding.svg?branch=master)](https://travis-ci.org/RxSwiftCommunity/RxBiBinding)
+[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![Version](https://img.shields.io/cocoapods/v/RxBiBinding.svg?style=flat)](https://cocoapods.org/pods/RxBiBinding)
 [![License](https://img.shields.io/cocoapods/l/RxBiBinding.svg?style=flat)](https://cocoapods.org/pods/RxBiBinding)
 [![Platform](https://img.shields.io/cocoapods/p/RxBiBinding.svg?style=flat)](https://cocoapods.org/pods/RxBiBinding)
