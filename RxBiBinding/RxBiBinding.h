@@ -3,7 +3,7 @@
 //  RxBiBinding
 //
 //  Created by Александр Макушкин on 06.10.2018.
-//  Copyright © 2018 xyz.amakushkin.RxBiBinding. All rights reserved.
+//  Copyright (c) RxSwiftCommunity. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
