@@ -64,6 +64,11 @@ it, simply add the following line to your Podfile:
 pod 'RxBiBinding'
 ```
 
+Carthage
+```
+carthage update --platform ios
+```
+
 ## Thanks
 
 This solution is based on [ReactiveCocoa](https://github.com/ReactiveCocoa/ReactiveCocoa) (Obj-C version)
