@@ -1,14 +1,11 @@
-# references:
-# * https://www.objc.io/issues/6-build-tools/travis-ci/
-# * https://github.com/supermarin/xcpretty#usage
-
 osx_image: xcode9.4
 language: swift
-cache: cocoapods
-podfile: Podfile
-before_install:
- - gem install cocoapods # Since Travis is not always on latest version
- - pod install
-script:
-- set -o pipefail && xcodebuild test -enableCodeCoverage YES -workspace RxBiBinding.xcworkspace -scheme RxBiBinding -sdk iphonesimulator11.4 -destination 'platform=iOS Simulator,name=iPhone 6,OS=11.4' ONLY_ACTIVE_ARCH=NO | xcpretty
-- pod lib lint
+
+install: true
+
+env:
+  - BUILD="carthage update --platform ios && set -o pipefail && (xcodebuild -project   RxBiBinding.xcodeproj   -scheme RxBiBinding -configuration Release -destination 'platform=iOS Simulator,name=iPhone 7' test) | xcpretty"
+  - BUILD="gem install cocoapods --pre --no-rdoc --no-ri --no-document --quiet; pod repo update && pod lib lint RxBiBinding.podspec --verbose"
+  - BUILD="carthage update --platform iOS  && carthage build --no-skip-current --platform iOS"
+
+script: eval "${BUILD}"
