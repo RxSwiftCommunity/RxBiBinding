@@ -4,7 +4,6 @@ language: swift
 install: true
 
 env:
-  - BUILD="carthage update --platform ios && set -o pipefail && (xcodebuild -project   RxBiBinding.xcodeproj   -scheme RxBiBinding -configuration Release -destination 'platform=iOS Simulator,name=iPhone 7' test) | xcpretty"
   - BUILD="gem install cocoapods --pre --no-rdoc --no-ri --no-document --quiet; pod repo update && pod lib lint RxBiBinding.podspec --verbose"
   - BUILD="carthage update --platform iOS  && carthage build --no-skip-current --platform iOS"
 
