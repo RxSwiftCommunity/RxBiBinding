@@ -38,19 +38,6 @@ var textField = UITextField()
 (textField.rx.text <-> text).disposed(by: disposeBag)
 ```
 
-Binding between two NSObject
-```swift
-class TestClass: NSObject {
-    @objc dynamic var string = "TestString"
-}
-
-let disposeBag = DisposeBag()
-var test1 = TestClass()
-var test2 = TestClass()
-
-((test1, "string") <-> (test2, "string")).disposed(by: disposeBag)
-```
-
 ## Requirements
 
 iOS >= 10
