@@ -114,8 +114,8 @@ extension RxChannel {
         
         gLeaTer
             .subscribe(onNext: { [weak self] value in
-                self?.createCurrentThreadData()
-                self?.currentThreadData()?.ignoreNextUpdate = true
+                /*self?.createCurrentThreadData()
+                self?.currentThreadData()?.ignoreNextUpdate = true*/
                 
                 property.onNext(value)
             })
