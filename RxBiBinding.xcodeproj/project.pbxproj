@@ -14,10 +14,6 @@
 		D911418521688EBC007FB459 /* RxBiBinding.h in Headers */ = {isa = PBXBuildFile; fileRef = D911417721688EBC007FB459 /* RxBiBinding.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D911419321688F58007FB459 /* AnyObservableType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D911418E21688F58007FB459 /* AnyObservableType.swift */; };
 		D911419421688F58007FB459 /* AnyObservableType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D911418E21688F58007FB459 /* AnyObservableType.swift */; };
-		D911419521688F58007FB459 /* RxChannelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D911418F21688F58007FB459 /* RxChannelData.swift */; };
-		D911419621688F58007FB459 /* RxChannelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D911418F21688F58007FB459 /* RxChannelData.swift */; };
-		D911419721688F58007FB459 /* String+KeyPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = D911419021688F58007FB459 /* String+KeyPath.swift */; };
-		D911419821688F58007FB459 /* String+KeyPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = D911419021688F58007FB459 /* String+KeyPath.swift */; };
 		D911419921688F58007FB459 /* RxChannel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D911419121688F58007FB459 /* RxChannel.swift */; };
 		D911419A21688F58007FB459 /* RxChannel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D911419121688F58007FB459 /* RxChannel.swift */; };
 		D911419B21688F58007FB459 /* RxChannelTerminal.swift in Sources */ = {isa = PBXBuildFile; fileRef = D911419221688F58007FB459 /* RxChannelTerminal.swift */; };
@@ -44,8 +40,6 @@
 		D911418221688EBC007FB459 /* RxBiBindingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxBiBindingTests.swift; sourceTree = "<group>"; };
 		D911418421688EBC007FB459 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D911418E21688F58007FB459 /* AnyObservableType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnyObservableType.swift; sourceTree = "<group>"; };
-		D911418F21688F58007FB459 /* RxChannelData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxChannelData.swift; sourceTree = "<group>"; };
-		D911419021688F58007FB459 /* String+KeyPath.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+KeyPath.swift"; sourceTree = "<group>"; };
 		D911419121688F58007FB459 /* RxChannel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxChannel.swift; sourceTree = "<group>"; };
 		D911419221688F58007FB459 /* RxChannelTerminal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxChannelTerminal.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -123,9 +117,7 @@
 			children = (
 				D911418E21688F58007FB459 /* AnyObservableType.swift */,
 				D911419121688F58007FB459 /* RxChannel.swift */,
-				D911418F21688F58007FB459 /* RxChannelData.swift */,
 				D911419221688F58007FB459 /* RxChannelTerminal.swift */,
-				D911419021688F58007FB459 /* String+KeyPath.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -262,8 +254,6 @@
 			files = (
 				D911419321688F58007FB459 /* AnyObservableType.swift in Sources */,
 				D911419921688F58007FB459 /* RxChannel.swift in Sources */,
-				D911419521688F58007FB459 /* RxChannelData.swift in Sources */,
-				D911419721688F58007FB459 /* String+KeyPath.swift in Sources */,
 				D911419B21688F58007FB459 /* RxChannelTerminal.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,11 +262,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D911419621688F58007FB459 /* RxChannelData.swift in Sources */,
 				D911418321688EBC007FB459 /* RxBiBindingTests.swift in Sources */,
 				D911419421688F58007FB459 /* AnyObservableType.swift in Sources */,
 				D911419C21688F58007FB459 /* RxChannelTerminal.swift in Sources */,
-				D911419821688F58007FB459 /* String+KeyPath.swift in Sources */,
 				D911419A21688F58007FB459 /* RxChannel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
