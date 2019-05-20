@@ -1,4 +1,5 @@
 platform :ios, '10.0'
+platform :osx, '10.9'
 use_frameworks!
 
 project './RxBiBinding.xcodeproj'

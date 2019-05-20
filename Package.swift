@@ -17,5 +17,5 @@ let package = Package(
             dependencies: ["RxSwift", "RxCocoa"]
         )
     ],
-    swiftLanguageVersions: [.v4]
+    swiftLanguageVersions: [.v5]
 )
