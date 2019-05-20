@@ -29,6 +29,7 @@ Reactive bidirectional (two-way) binding between RxControlProperties and RxVaria
   s.social_media_url = 'https://twitter.com/Underbridgins'
 
   s.ios.deployment_target = '10.0'
+  s.osx.deployment_target = '10.9'
   s.swift_version = '5.0'
   s.source_files = 'RxBiBinding/Classes/**/*'
 
