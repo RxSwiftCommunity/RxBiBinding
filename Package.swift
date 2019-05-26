@@ -5,15 +5,19 @@ let package = Package(
     products: [
         .library(
             name: "RxBiBinding",
-            targets: ["RxBiBinding"]
+            targets: ["RxBiBinding", "RxBiBinding macOS"]
         )
     ],
     dependencies: [
-        .package(url: "https://github.com/ReactiveX/RxSwift.git", from: "4.2" )
+        .package(url: "https://github.com/ReactiveX/RxSwift.git", from: "4.5" )
     ],
     targets: [
         .target(
             name: "RxBiBinding",
+            dependencies: ["RxSwift", "RxCocoa"]
+        ),
+        .target(
+            name: "RxBiBinding macOS",
             dependencies: ["RxSwift", "RxCocoa"]
         )
     ],

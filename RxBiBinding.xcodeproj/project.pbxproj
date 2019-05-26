@@ -11,6 +11,11 @@
 		1EC25C33B63F4C779AC72EA9 /* Pods_RxBiBinding_macOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 203EA056703B204138FA7770 /* Pods_RxBiBinding_macOS.framework */; };
 		30A70931216E12AE0056D6A8 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30A7092F216E12AE0056D6A8 /* RxSwift.framework */; };
 		30A70932216E12AE0056D6A8 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30A70930216E12AE0056D6A8 /* RxCocoa.framework */; };
+		D90C40BC229B185F00F81316 /* AnyObservableType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D911418E21688F58007FB459 /* AnyObservableType.swift */; };
+		D90C40BD229B185F00F81316 /* RxChannel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D911419121688F58007FB459 /* RxChannel.swift */; };
+		D90C40BE229B185F00F81316 /* RxChannelTerminal.swift in Sources */ = {isa = PBXBuildFile; fileRef = D911419221688F58007FB459 /* RxChannelTerminal.swift */; };
+		D90C40C1229B18D800F81316 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D90C40C0229B18D800F81316 /* RxCocoa.framework */; };
+		D90C40C3229B18E000F81316 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D90C40C2229B18E000F81316 /* RxSwift.framework */; };
 		D911417E21688EBC007FB459 /* RxBiBinding.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D911417421688EBC007FB459 /* RxBiBinding.framework */; };
 		D911418321688EBC007FB459 /* RxBiBindingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D911418221688EBC007FB459 /* RxBiBindingTests.swift */; };
 		D911418521688EBC007FB459 /* RxBiBinding.h in Headers */ = {isa = PBXBuildFile; fileRef = D911417721688EBC007FB459 /* RxBiBinding.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -40,6 +45,8 @@
 		30A70930216E12AE0056D6A8 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
 		314F54D56C3CAD7EFF0BCF97 /* Pods_RxBiBinding.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxBiBinding.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		467F94A4D300725FBAFCD169 /* Pods-RxBiBinding.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxBiBinding.release.xcconfig"; path = "Target Support Files/Pods-RxBiBinding/Pods-RxBiBinding.release.xcconfig"; sourceTree = "<group>"; };
+		D90C40C0229B18D800F81316 /* RxCocoa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RxCocoa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D90C40C2229B18E000F81316 /* RxSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RxSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D911417421688EBC007FB459 /* RxBiBinding.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RxBiBinding.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D911417721688EBC007FB459 /* RxBiBinding.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RxBiBinding.h; sourceTree = "<group>"; };
 		D911417821688EBC007FB459 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -79,6 +86,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D90C40C3229B18E000F81316 /* RxSwift.framework in Frameworks */,
+				D90C40C1229B18D800F81316 /* RxCocoa.framework in Frameworks */,
 				1EC25C33B63F4C779AC72EA9 /* Pods_RxBiBinding_macOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -89,6 +98,8 @@
 		30A7092E216E12AE0056D6A8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D90C40C2229B18E000F81316 /* RxSwift.framework */,
+				D90C40C0229B18D800F81316 /* RxCocoa.framework */,
 				30A70930216E12AE0056D6A8 /* RxCocoa.framework */,
 				30A7092F216E12AE0056D6A8 /* RxSwift.framework */,
 				314F54D56C3CAD7EFF0BCF97 /* Pods_RxBiBinding.framework */,
@@ -372,7 +383,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks";
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -402,6 +413,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D90C40BC229B185F00F81316 /* AnyObservableType.swift in Sources */,
+				D90C40BD229B185F00F81316 /* RxChannel.swift in Sources */,
+				D90C40BE229B185F00F81316 /* RxChannelTerminal.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
