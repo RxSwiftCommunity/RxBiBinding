@@ -7,10 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0DDC3FAA74B7B6E3F208DA3B /* Pods_RxBiBinding.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 314F54D56C3CAD7EFF0BCF97 /* Pods_RxBiBinding.framework */; };
-		1EC25C33B63F4C779AC72EA9 /* Pods_RxBiBinding_macOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 203EA056703B204138FA7770 /* Pods_RxBiBinding_macOS.framework */; };
-		30A70931216E12AE0056D6A8 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30A7092F216E12AE0056D6A8 /* RxSwift.framework */; };
-		30A70932216E12AE0056D6A8 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30A70930216E12AE0056D6A8 /* RxCocoa.framework */; };
 		D911417E21688EBC007FB459 /* RxBiBinding.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D911417421688EBC007FB459 /* RxBiBinding.framework */; };
 		D911418321688EBC007FB459 /* RxBiBindingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D911418221688EBC007FB459 /* RxBiBindingTests.swift */; };
 		D911418521688EBC007FB459 /* RxBiBinding.h in Headers */ = {isa = PBXBuildFile; fileRef = D911417721688EBC007FB459 /* RxBiBinding.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -20,6 +16,14 @@
 		D911419A21688F58007FB459 /* RxChannel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D911419121688F58007FB459 /* RxChannel.swift */; };
 		D911419B21688F58007FB459 /* RxChannelTerminal.swift in Sources */ = {isa = PBXBuildFile; fileRef = D911419221688F58007FB459 /* RxChannelTerminal.swift */; };
 		D911419C21688F58007FB459 /* RxChannelTerminal.swift in Sources */ = {isa = PBXBuildFile; fileRef = D911419221688F58007FB459 /* RxChannelTerminal.swift */; };
+		D9250AFA22A3A57D00DD96BC /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30A70930216E12AE0056D6A8 /* RxCocoa.framework */; };
+		D9250AFB22A3A57D00DD96BC /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30A7092F216E12AE0056D6A8 /* RxSwift.framework */; };
+		D9250AFE22A3A59200DD96BC /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9250AFC22A3A59200DD96BC /* RxSwift.framework */; };
+		D9250AFF22A3A59200DD96BC /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9250AFD22A3A59200DD96BC /* RxCocoa.framework */; };
+		D9250B0022A3A5AD00DD96BC /* AnyObservableType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D911418E21688F58007FB459 /* AnyObservableType.swift */; };
+		D9250B0122A3A5AD00DD96BC /* RxChannel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D911419121688F58007FB459 /* RxChannel.swift */; };
+		D9250B0222A3A5AD00DD96BC /* RxChannelTerminal.swift in Sources */ = {isa = PBXBuildFile; fileRef = D911419221688F58007FB459 /* RxChannelTerminal.swift */; };
+		D9250B0322A3A5AD00DD96BC /* RxBiBinding.h in Headers */ = {isa = PBXBuildFile; fileRef = D911417721688EBC007FB459 /* RxBiBinding.h */; };
 		D9FD6739229AFEA400A75585 /* RxBiBinding_macOS.h in Headers */ = {isa = PBXBuildFile; fileRef = D9FD6737229AFEA400A75585 /* RxBiBinding_macOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
@@ -34,12 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1CC9426886E71CB24C24578E /* Pods-RxBiBinding.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxBiBinding.debug.xcconfig"; path = "Target Support Files/Pods-RxBiBinding/Pods-RxBiBinding.debug.xcconfig"; sourceTree = "<group>"; };
-		203EA056703B204138FA7770 /* Pods_RxBiBinding_macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxBiBinding_macOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		30A7092F216E12AE0056D6A8 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
 		30A70930216E12AE0056D6A8 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
-		314F54D56C3CAD7EFF0BCF97 /* Pods_RxBiBinding.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxBiBinding.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		467F94A4D300725FBAFCD169 /* Pods-RxBiBinding.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxBiBinding.release.xcconfig"; path = "Target Support Files/Pods-RxBiBinding/Pods-RxBiBinding.release.xcconfig"; sourceTree = "<group>"; };
 		D911417421688EBC007FB459 /* RxBiBinding.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RxBiBinding.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D911417721688EBC007FB459 /* RxBiBinding.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RxBiBinding.h; sourceTree = "<group>"; };
 		D911417821688EBC007FB459 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,11 +49,11 @@
 		D911418E21688F58007FB459 /* AnyObservableType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnyObservableType.swift; sourceTree = "<group>"; };
 		D911419121688F58007FB459 /* RxChannel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxChannel.swift; sourceTree = "<group>"; };
 		D911419221688F58007FB459 /* RxChannelTerminal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxChannelTerminal.swift; sourceTree = "<group>"; };
+		D9250AFC22A3A59200DD96BC /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/Mac/RxSwift.framework; sourceTree = "<group>"; };
+		D9250AFD22A3A59200DD96BC /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/Mac/RxCocoa.framework; sourceTree = "<group>"; };
 		D9FD6735229AFEA400A75585 /* RxBiBinding_macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RxBiBinding_macOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9FD6737229AFEA400A75585 /* RxBiBinding_macOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RxBiBinding_macOS.h; sourceTree = "<group>"; };
 		D9FD6738229AFEA400A75585 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DEC4871F88AF6C45286AE138 /* Pods-RxBiBinding macOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxBiBinding macOS.debug.xcconfig"; path = "Target Support Files/Pods-RxBiBinding macOS/Pods-RxBiBinding macOS.debug.xcconfig"; sourceTree = "<group>"; };
-		E467BCF7BB0A138D67E79197 /* Pods-RxBiBinding macOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxBiBinding macOS.release.xcconfig"; path = "Target Support Files/Pods-RxBiBinding macOS/Pods-RxBiBinding macOS.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,9 +61,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				30A70931216E12AE0056D6A8 /* RxSwift.framework in Frameworks */,
-				30A70932216E12AE0056D6A8 /* RxCocoa.framework in Frameworks */,
-				0DDC3FAA74B7B6E3F208DA3B /* Pods_RxBiBinding.framework in Frameworks */,
+				D9250AFA22A3A57D00DD96BC /* RxCocoa.framework in Frameworks */,
+				D9250AFB22A3A57D00DD96BC /* RxSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,7 +78,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1EC25C33B63F4C779AC72EA9 /* Pods_RxBiBinding_macOS.framework in Frameworks */,
+				D9250AFE22A3A59200DD96BC /* RxSwift.framework in Frameworks */,
+				D9250AFF22A3A59200DD96BC /* RxCocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,10 +89,10 @@
 		30A7092E216E12AE0056D6A8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D9250AFD22A3A59200DD96BC /* RxCocoa.framework */,
+				D9250AFC22A3A59200DD96BC /* RxSwift.framework */,
 				30A70930216E12AE0056D6A8 /* RxCocoa.framework */,
 				30A7092F216E12AE0056D6A8 /* RxSwift.framework */,
-				314F54D56C3CAD7EFF0BCF97 /* Pods_RxBiBinding.framework */,
-				203EA056703B204138FA7770 /* Pods_RxBiBinding_macOS.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -160,10 +160,6 @@
 		F9A60825CDFB401F5615FC38 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				1CC9426886E71CB24C24578E /* Pods-RxBiBinding.debug.xcconfig */,
-				467F94A4D300725FBAFCD169 /* Pods-RxBiBinding.release.xcconfig */,
-				DEC4871F88AF6C45286AE138 /* Pods-RxBiBinding macOS.debug.xcconfig */,
-				E467BCF7BB0A138D67E79197 /* Pods-RxBiBinding macOS.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -184,6 +180,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D9FD6739229AFEA400A75585 /* RxBiBinding_macOS.h in Headers */,
+				D9250B0322A3A5AD00DD96BC /* RxBiBinding.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,7 +191,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D911418821688EBC007FB459 /* Build configuration list for PBXNativeTarget "RxBiBinding" */;
 			buildPhases = (
-				06B4AD96DE33C0C2E5BEF7BF /* [CP] Check Pods Manifest.lock */,
 				D911416F21688EBC007FB459 /* Headers */,
 				D911417021688EBC007FB459 /* Sources */,
 				D911417121688EBC007FB459 /* Frameworks */,
@@ -232,7 +228,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D9FD673A229AFEA400A75585 /* Build configuration list for PBXNativeTarget "RxBiBinding macOS" */;
 			buildPhases = (
-				05CE9E8F362AD33EAD3C37D9 /* [CP] Check Pods Manifest.lock */,
 				D9FD6730229AFEA400A75585 /* Headers */,
 				D9FD6731229AFEA400A75585 /* Sources */,
 				D9FD6732229AFEA400A75585 /* Frameworks */,
@@ -313,50 +308,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		05CE9E8F362AD33EAD3C37D9 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-RxBiBinding macOS-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		06B4AD96DE33C0C2E5BEF7BF /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-RxBiBinding-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 		30A70933216E15A80056D6A8 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -372,7 +323,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks";
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -402,6 +353,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9250B0222A3A5AD00DD96BC /* RxChannelTerminal.swift in Sources */,
+				D9250B0022A3A5AD00DD96BC /* AnyObservableType.swift in Sources */,
+				D9250B0122A3A5AD00DD96BC /* RxChannel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -542,7 +496,6 @@
 		};
 		D911418921688EBC007FB459 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1CC9426886E71CB24C24578E /* Pods-RxBiBinding.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -576,7 +529,6 @@
 		};
 		D911418A21688EBC007FB459 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 467F94A4D300725FBAFCD169 /* Pods-RxBiBinding.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -657,7 +609,6 @@
 		};
 		D9FD673B229AFEA400A75585 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DEC4871F88AF6C45286AE138 /* Pods-RxBiBinding macOS.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Manual;
@@ -667,6 +618,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = "RxBiBinding macOS/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -687,7 +642,6 @@
 		};
 		D9FD673C229AFEA400A75585 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E467BCF7BB0A138D67E79197 /* Pods-RxBiBinding macOS.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Manual;
@@ -697,6 +651,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = "RxBiBinding macOS/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
