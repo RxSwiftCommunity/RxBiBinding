@@ -10,6 +10,8 @@ import RxSwift
 import RxCocoa
 
 class RxChannelTerminal<E>: NSObject {
+    typealias Element = E
+    
     fileprivate private(set) var values: AnyObservableType<E>?
     fileprivate private(set) var otherTerminal: AnyObserver<E>?
     
@@ -28,7 +30,7 @@ extension RxChannelTerminal: ObserverType {
 }
 
 extension RxChannelTerminal: ObservableType {
-    func subscribe<O>(_ observer: O) -> Disposable where O : ObserverType, RxChannelTerminal.E == O.E {
+    func subscribe<O>(_ observer: O) -> Disposable where O : ObserverType, RxChannelTerminal.Element == O.Element {
         return self.values?.subscribe(observer) ?? Disposables.create()
     }
 }

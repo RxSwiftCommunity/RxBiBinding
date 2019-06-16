@@ -13,11 +13,11 @@ class AnyObservableType<Element>: ObservableType {
     
     private let _subscribe: (AnyObserver<E>) -> Disposable
     
-    init<O>(_ observer: O) where O : ObservableType, O.E == Element {
+    init<O>(_ observer: O) where O : ObservableType, O.Element == Element {
         self._subscribe = observer.subscribe(_:)
     }
     
-    func subscribe<O>(_ observer: O) -> Disposable where O : ObserverType, O.E == Element {
+    func subscribe<O>(_ observer: O) -> Disposable where O : ObserverType, O.Element == Element {
         return self._subscribe(observer.asObserver())
     }
 }
