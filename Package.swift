@@ -9,7 +9,7 @@ let package = Package(
         )
     ],
     dependencies: [
-        .package(url: "https://github.com/ReactiveX/RxSwift.git", from: "4.5" )
+        .package(url: "https://github.com/ReactiveX/RxSwift.git", from: "5.0" )
     ],
     targets: [
         .target(

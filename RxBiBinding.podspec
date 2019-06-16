@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'RxBiBinding'
-  s.version          = '0.2.1'
+  s.version          = '0.2.2'
   s.summary          = 'Bidirectional binding. Inspired by ReactiveCocoa'
 
 # This description is used to generate tags and improve search results.
@@ -39,6 +39,6 @@ Reactive bidirectional (two-way) binding between RxControlProperties and RxVaria
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  s.dependency "RxSwift", "~> 4.5"
-  s.dependency "RxCocoa", "~> 4.5"
+  s.dependency "RxSwift", "~> 5.0"
+  s.dependency "RxCocoa", "~> 5.0"
 end
