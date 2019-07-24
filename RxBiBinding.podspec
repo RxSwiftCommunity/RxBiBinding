@@ -30,7 +30,7 @@ Reactive bidirectional (two-way) binding between RxControlProperties and RxVaria
 
   s.ios.deployment_target = '10.0'
   s.osx.deployment_target = '10.9'
-  s.swift_version = '5.0'
+  s.swift_version = '4.2'
   s.source_files = 'RxBiBinding/Classes/**/*'
 
   # s.resource_bundles = {
@@ -39,6 +39,6 @@ Reactive bidirectional (two-way) binding between RxControlProperties and RxVaria
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  s.dependency "RxSwift", "~> 5.0"
-  s.dependency "RxCocoa", "~> 5.0"
+  s.dependency "RxSwift", "~> 4.4"
+  s.dependency "RxCocoa", "~> 4.4"
 end
