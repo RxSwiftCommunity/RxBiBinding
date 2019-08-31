@@ -161,7 +161,5 @@ extension RxChannel {
 
 //MARK: - Disposable RxChannel
 extension RxChannel: Disposable {
-    func dispose() {
-        print("RxChannel -> dispose")
-    }
+    func dispose() {}
 }
