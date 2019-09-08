@@ -1,3 +1,5 @@
+// swift-tools-version:5.0
+
 import PackageDescription
 
 let package = Package(
@@ -9,7 +11,7 @@ let package = Package(
         )
     ],
     dependencies: [
-        .package(url: "https://github.com/ReactiveX/RxSwift.git", from: "5.0" )
+        .package(url: "https://github.com/ReactiveX/RxSwift.git", from: "5.0.0" )
     ],
     targets: [
         .target(
@@ -20,6 +22,5 @@ let package = Package(
             name: "RxBiBinding macOS",
             dependencies: ["RxSwift", "RxCocoa"]
         )
-    ],
-    swiftLanguageVersions: [.v5]
+    ]
 )
