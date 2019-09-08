@@ -4,10 +4,13 @@ import PackageDescription
 
 let package = Package(
     name: "RxBiBinding",
+	platforms: [
+		.macOS(.v10_10), .iOS(.v10)
+	],
     products: [
         .library(
             name: "RxBiBinding",
-            targets: ["RxBiBinding", "RxBiBinding macOS"]
+            targets: ["RxBiBinding"]
         )
     ],
     dependencies: [
@@ -16,11 +19,8 @@ let package = Package(
     targets: [
         .target(
             name: "RxBiBinding",
-            dependencies: ["RxSwift", "RxCocoa"]
-        ),
-        .target(
-            name: "RxBiBinding macOS",
-            dependencies: ["RxSwift", "RxCocoa"]
+            dependencies: ["RxSwift", "RxCocoa"],
+			path: "RxBiBinding"
         )
     ]
 )

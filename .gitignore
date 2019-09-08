@@ -19,6 +19,8 @@ DerivedData
 *.hmap
 *.ipa
 *~
+.build/
+Package.resolved
 
 # Bundler
 .bundle
