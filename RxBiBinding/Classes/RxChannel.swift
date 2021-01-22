@@ -50,20 +50,22 @@ class RxChannel<E>: NSObject {
         
         leadingSubject
             .ignoreElements()
-            .subscribe(onCompleted: {
-                followingSubject.onCompleted()
-            }) { error in
+            .subscribe(onError: { error in
                 followingSubject.onError(error)
-            }
+            },
+            onCompleted: {
+                followingSubject.onCompleted()
+            })
             .disposed(by: self.disposeBag)
         
         followingSubject
             .ignoreElements()
-            .subscribe(onCompleted: {
-                leadingSubject.onCompleted()
-            }) { error in
+            .subscribe(onError: { error in
                 leadingSubject.onError(error)
-            }
+            },
+            onCompleted: {
+                leadingSubject.onCompleted()
+            })
             .disposed(by: self.disposeBag)
         
         self.leadingTerminal = RxChannelTerminal<E>.init(withValues: AnyObservableType<E>(leadingSubject),
@@ -78,9 +80,9 @@ extension RxChannel {
     convenience init(withProperty property: ControlProperty<E>) {
         self.init()
         
-        _ = property.do { [weak self] in
+        _ = property.do(onDispose:  { [weak self] in
             self?.leadingTerminal?.onCompleted()
-        }
+        })
         
         guard let gLeaTer = self.leadingTerminal else {
             return
@@ -113,9 +115,9 @@ extension RxChannel {
         
         _ = relay
             .asObservable()
-            .do { [weak self] in
+            .do(onDispose:  { [weak self] in
                 self?.leadingTerminal?.onCompleted()
-        }
+            })
         
         guard let gLeaTer = self.leadingTerminal else {
             return
