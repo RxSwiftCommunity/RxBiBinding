@@ -1,11 +1,11 @@
-osx_image: xcode10.2
+osx_image: xcode12.2
 language: swift
 
 install: true
 
 env:
-  - BUILD="gem install cocoapods --pre --no-rdoc --no-ri --no-document --quiet; pod repo update && pod lib lint RxBiBinding.podspec --verbose"
-  - BUILD="carthage update --platform iOS  && carthage build --no-skip-current --platform iOS"
+  - BUILD="gem install cocoapods --pre --no-rdoc --no-ri --no-document --quiet; pod repo update && pod lib lint RxBiBinding.podspec --verbose --allow-warnings"
+  - BUILD="./carthage.sh build --platform iOS"
   - BUILD="carthage update --platform macOS  && carthage build --no-skip-current --platform macOS"
 
 script: eval "${BUILD}"
